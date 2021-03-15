@@ -9,18 +9,23 @@ package paintingshapes;
  *
  * @author N I T RO
  */
-public class Sphere extends Shape {
-    private double radius; //radius in feet
+public class Cylinder extends Shape{
+    private double radius;
+    private double height;
     
-    public Sphere(double r){
-        super("Sphere");
+    public Cylinder(double r,double s){
+        super("Cylinder");
         radius = r;
+        height = s;
     }
+    
+    @Override
     public double area(){
-        return 4*Math.PI*radius*radius;
+        return Math.PI*radius*radius*height;
     }
+    
     @Override
     public String toString(){
-        return super.toString() + "\n" + "of radius " +radius;
+        return super.toString() + "\n" + "of radius " +radius + " and of height "+height;
     }
 }
