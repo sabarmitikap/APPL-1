@@ -9,7 +9,6 @@ package anothertypeofemployee;
  *
  * @author N I T RO
  */
-
 public class Commission extends Hourly {
     private double totalSales; 
     private double comrate;
