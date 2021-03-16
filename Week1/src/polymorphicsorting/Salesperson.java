@@ -7,7 +7,7 @@ package polymorphicsorting;
 
 /**
  *
- * @author N I T RO
+ * @author Sabar
  */
 public class Salesperson implements Comparable 
 { 
@@ -36,8 +36,7 @@ public class Salesperson implements Comparable
  //------------------------------------------- 
  public boolean equals (Object other) 
  { 
- return (lastName.equals(((Salesperson)other).getLastName()) && 
- firstName.equals(((Salesperson)other).getFirstName())); 
+ return (lastName.equals(((Salesperson)other).getLastName()) && firstName.equals(((Salesperson)other).getFirstName())); 
  } 
  //-------------------------------------------------- 
  // Order is based on total sales with the name 
@@ -45,8 +44,11 @@ public class Salesperson implements Comparable
  //-------------------------------------------------- 
  public int compareTo(Object other) 
  { 
- int result; 
- return result; 
+        int result = Integer.compare(getSales(),((Salesperson)other).getSales());
+        if(result == 0){
+            return getFirstName().compareTo(((Salesperson)other).getFirstName())*-1;
+        }
+        return result;
  } 
  
  //------------------------- 
