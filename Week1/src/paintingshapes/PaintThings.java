@@ -4,12 +4,13 @@
  * and open the template in the editor.
  */
 package paintingshapes;
+import java.text.DecimalFormat;
 
 /**
  *
- * @author N I T RO
+ * @author Sabar
  */
-import java.text.DecimalFormat;
+
 public class PaintThings {
     public static void main (String[] args){
         final double COVERAGE = 350;
@@ -26,9 +27,9 @@ public class PaintThings {
         double deckAmt = paint.amount(deck), ballAmt = paint.amount(bigBall), tankAmt = paint.amount(tank);
         
         DecimalFormat fmt = new DecimalFormat("0.#");
-        System.out.println("\nNumber of gallons of paint needed...");
-        System.out.println("Deck "+ fmt.format(deckAmt));
-        System.out.println("Big Ball " + fmt.format(ballAmt));
-        System.out.println("Tank " + fmt.format(tankAmt));
+        System.out.println("Number of gallons of paint needed:");
+        System.out.println("Deck :"+ fmt.format(deckAmt));
+        System.out.println("Big Ball :" + fmt.format(ballAmt));
+        System.out.println("Tank :" + fmt.format(tankAmt));
     }
 }

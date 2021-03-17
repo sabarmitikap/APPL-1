@@ -7,8 +7,9 @@ package paintingshapes;
 
 /**
  *
- * @author N I T RO
+ * @author Sabar
  */
+
 public class Rectangle extends Shape {
     private double length;
     private double width;
@@ -19,10 +20,6 @@ public class Rectangle extends Shape {
         width = s;
     }
     
-    /**
-     *
-     * @return
-     */
     @Override
     public double area(){
         return length*width;
@@ -30,6 +27,6 @@ public class Rectangle extends Shape {
     
     @Override
     public String toString(){
-        return super.toString() + "\n" +  "of length " +length + " and of width "+width;
+        return super.toString() + "\n" +  "Length :" +length + "\nWidth :"+width+"\n";
     }
 }

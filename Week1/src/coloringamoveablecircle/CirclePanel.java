@@ -10,7 +10,7 @@ import java.awt.event.*;
 
 /**
  *
- * @author N I T RO
+ * @author Sabar
  */
 
 public class CirclePanel extends JPanel {

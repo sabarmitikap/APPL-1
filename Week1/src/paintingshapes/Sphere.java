@@ -7,8 +7,9 @@ package paintingshapes;
 
 /**
  *
- * @author N I T RO
+ * @author Sabar
  */
+
 public class Sphere extends Shape {
     private double radius; //radius in feet
     
@@ -21,6 +22,6 @@ public class Sphere extends Shape {
     }
     @Override
     public String toString(){
-        return super.toString() + "\n" + "of radius " +radius;
+        return super.toString() + "\n" + "Radius :" +radius+"\n";
     }
 }

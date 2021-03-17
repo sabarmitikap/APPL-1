@@ -7,8 +7,9 @@ package paintingshapes;
 
 /**
  *
- * @author N I T RO
+ * @author Sabar
  */
+
 public class Cylinder extends Shape{
     private double radius;
     private double height;
@@ -26,6 +27,6 @@ public class Cylinder extends Shape{
     
     @Override
     public String toString(){
-        return super.toString() + "\n" + "of radius " +radius + " and of height "+height;
+        return super.toString() + "\n" + "Radius :" +radius + "\nHeight :"+height+"\n";
     }
 }

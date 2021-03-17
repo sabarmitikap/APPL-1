@@ -7,19 +7,22 @@ package paintingshapes;
 
 /**
  *
- * @author N I T RO
+ * @author Sabar
  */
+
 public abstract class Shape {
-    protected String name;
+    protected String shapeName;
     String toString;
     public abstract double area();
     
-    public Shape (String eName){
-        this.name = eName;
+    public Shape (String shapeName){
+        this.shapeName = shapeName;
     }
     
     @Override
     public String toString(){
-        return "\nShape Name: "+name;
+        return "Shape Name: "+shapeName;
     }
 }
+
+

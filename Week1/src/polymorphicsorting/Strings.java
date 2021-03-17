@@ -27,7 +27,7 @@ public class Strings {
         
         Sorting.selectionSort(strList);
 
-        System.out.println("\nYour strings in descending  order...");
+        System.out.println("\nYour strings in descending order...");
         for (int i = 0; i < size; i++)
         System.out.print(strList[i] + " \n");
         System.out.println();
