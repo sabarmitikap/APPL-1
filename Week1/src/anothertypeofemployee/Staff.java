@@ -7,13 +7,16 @@ package anothertypeofemployee;
 
 /**
  *
- * @author N I T RO
+ * @author Sabar
  */
+
 public class Staff{
     private StaffMember[] staffList;
+    
 //----------------------------------------------------------
 // Constructor: Sets up the list of staff members.
 //----------------------------------------------------------
+    
     public Staff (){
         staffList = new StaffMember[8];
         staffList[0] = new Executive ("Sam", "123 Main Line", "555-0469", "123-45-6789", 2423.07);
@@ -22,8 +25,8 @@ public class Staff{
         staffList[3] = new Hourly ("Diane", "678 Fifth Ave.", "555-0690", "958-47-3625", 10.55);
         staffList[4] = new Volunteer ("Norm", "987 Suds Blvd.","555-8374");
         staffList[5] = new Volunteer ("Cliff", "321 Duds Lane", "555-7282");
-        staffList[6] = new Commission ("Sabar", "567 Side Laner", "555-6993", "167-23-9416", 6.25, 0.2);
-        staffList[7] = new Commission ("Itikap", "789 Off Laner", "555-6923", "958-24-3576", 9.75, 0.15);
+        staffList[6] = new Commission ("Sabar", "Veteran 1 No. 32", "089699489135", "167-23-9416", 6.25, 0.2);
+        staffList[7] = new Commission ("Subur", "Ciwaruga Nortwood No. 60", "081255110678", "958-24-3576", 9.75, 0.15);
         ((Executive)staffList[0]).awardBonus (500.00);
         ((Hourly)staffList[3]).addHours (40);
         ((Commission)staffList[6]).addHours(35);

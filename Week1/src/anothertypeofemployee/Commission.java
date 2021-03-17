@@ -7,25 +7,29 @@ package anothertypeofemployee;
 
 /**
  *
- * @author N I T RO
+ * @author Sabar
  */
+
 public class Commission extends Hourly {
     private double totalSales; 
     private double comrate;
     
-    public Commission(String eName, String eAddress, String ePhone, String socSecNumber, double rate, double corate){
+    public Commission(String eName, String eAddress, String ePhone, String socSecNumber, double rate, double comrate){
         super(eName, eAddress, ePhone, socSecNumber, rate);
-        comrate = corate;
+        this.comrate = comrate;
     }
-    public void addSales(double newtotalSales){
-        totalSales += newtotalSales;
+    
+    public void addSales(double totalSales){
+        this.totalSales += totalSales;
     }
+    
     @Override
     public double pay(){
-        totalSales = totalSales*comrate;
-        totalSales = totalSales + super.pay(); 
-        return totalSales;
+        double temp = totalSales * comrate;
+        totalSales = 0; 
+        return temp + super.pay();
     }
+    
     public String toString(){
         String result = super.toString();
         result += "\nTotal Sales: "+ totalSales;

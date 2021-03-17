@@ -7,13 +7,11 @@ package anothertypeofemployee;
 
 /**
  *
- * @author N I T RO
+ * @author Sabar
  */
+
 public class Firm {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         // TODO code application logic here
         Staff personnel = new Staff();
