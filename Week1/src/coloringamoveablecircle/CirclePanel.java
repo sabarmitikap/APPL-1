@@ -34,7 +34,7 @@ this.setLayout(new BorderLayout());
 
 // Create buttons to coloring the circle
 JButton pink = new JButton("Pink");
-JButton green    = new JButton("Purple");
+JButton green = new JButton("Green");
 JButton blue = new JButton("Blue");
 JButton orange = new JButton("Orange");
 
@@ -76,19 +76,13 @@ buttonPanelColor.add(chooseColor);
 buttonPanelColor.add(blue);
 buttonPanelColor.add(orange);
 // Add the button panel to the bottom of the main panel
-this.add(buttonPanel, "North");
+this.add(buttonPanelColor, "North");
 
 //background of each button
 pink.setBackground(Color.pink);
 green.setBackground(Color.green);
-blue.setBackground(Color.blue);
+blue.setBackground(Color.white);
 orange.setBackground(Color.orange);
-
-//foreground of each button
-pink.setForeground(Color.black);
-green.setForeground(Color.white);
-blue.setForeground(Color.white);
-orange.setForeground(Color.black);
 }
 
 //---------------------------------------------------------------
@@ -98,7 +92,6 @@ orange.setForeground(Color.black);
 public void paintComponent(Graphics page) {
 
 super.paintComponent(page);
-
 page.setColor(c);
 page.fillOval(x,y,CIRCLE_SIZE,CIRCLE_SIZE);
 }
