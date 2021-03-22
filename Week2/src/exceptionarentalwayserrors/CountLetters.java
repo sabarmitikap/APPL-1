@@ -27,7 +27,7 @@ word = word.toUpperCase();
 //count frequency of each letter in string
 try {
 for (int i=0; i < word.length(); i++)
-counts[word.charAt(i)-'A']++
+counts[word.charAt(i)-'A']++;
 
 //print frequencies
 System.out.println();
