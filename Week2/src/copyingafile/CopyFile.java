@@ -15,25 +15,18 @@ import java.io.File;
 
 public class CopyFile {
     public static void main(String[] args) {
-        String keepFinding = "y";
-        Scanner scan = new Scanner(System.in);
         
-        while (keepFinding.equals("y") || keepFinding.equals("Y")){
-            System.out.println("Enter the name of the file (must include with '.txt' : ");
+        System.out.println("Masukan Nama File '.txt' : ");
+        String fileName = new Scanner(System.in).nextLine();      
+        
         try {
-            String fileName = new Scanner(System.in).nextLine();
-            File fileLoc = new File("D:\\Java\\" + fileName);   
-            Scanner hasil = new Scanner(fileLoc); 
+            File fileLoc = new File("D:\\Java\\" + fileName);
+            Scanner hasil = new Scanner(fileLoc);
             while (hasil.hasNextLine()) {
                     System.out.println(hasil.nextLine());
             }
-            break;
         }catch (FileNotFoundException e){
-            System.out.print("File does not exist\n");
+            System.out.print("File Tidak Ada!!!\n");
         }
-        
-        System.out.print("Wanna keep looking? (y/n) ");
-        keepFinding = scan.next();
         }
     }
-}

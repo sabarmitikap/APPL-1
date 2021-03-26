@@ -27,7 +27,7 @@ public class ParseInts {
             val = Integer.parseInt(scanLine.next());
             sum += val;
         }
-        catch (Exception e) {
+        catch (NumberFormatException e) {
         //Do Nothing
         }
     }

@@ -36,7 +36,7 @@ public class CountLetters {
         System.out.println((char)(i +'A') + ": " + counts[i]);
     } 
     catch (Exception e) {
-        System.out.println("Not a letter");    
+        System.out.println("Not a letter: "+ word);    
     }
     }
 }
